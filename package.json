@@ -1,0 +1,16 @@
+{
+  "name": "aurum",
+  "version": "1.0.0",
+  "description": "Web-based gold price monitoring application with alerting.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.1",
+    "nodemailer": "^8.0.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,161 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  background: #f6f5f2;
+  color: #1f1c17;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px 72px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: #8c7b59;
+  margin-bottom: 8px;
+}
+
+.subhead {
+  max-width: 520px;
+  color: #524638;
+  line-height: 1.5;
+}
+
+.price-card {
+  background: #1f1c17;
+  color: #f9f4e8;
+  padding: 24px 28px;
+  border-radius: 16px;
+  min-width: 220px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  font-size: 2rem;
+  margin: 12px 0 4px;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #e4d6bc;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 20px rgba(31, 28, 23, 0.08);
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+input,
+select,
+button {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d3c6aa;
+  font-size: 1rem;
+}
+
+button {
+  background: #c3922a;
+  color: #fffaf0;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(195, 146, 42, 0.25);
+}
+
+.thresholds {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.helper {
+  color: #6a5b4a;
+  font-size: 0.9rem;
+}
+
+.status {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #f3efe6;
+  color: #5a4a38;
+}
+
+.status.success {
+  background: #e7f6ec;
+  color: #2a6a3f;
+}
+
+.status.error {
+  background: #fde8e8;
+  color: #7f1d1d;
+}
+
+.note {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: #6a5b4a;
+}
+
+.agent-panel pre {
+  background: #12100b;
+  color: #f8f2e6;
+  padding: 16px;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .price-card {
+    width: 100%;
+  }
+}
